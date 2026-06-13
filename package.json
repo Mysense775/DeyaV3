@@ -1,0 +1,74 @@
+{
+  "name": "deya-v3",
+  "version": "3.0.0",
+  "description": "AI-Ассистент для Бизнеса и Креатива",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "lint": "eslint src/",
+    "setup": "node scripts/setup.js",
+    "backup": "node scripts/backup.js",
+    "healthcheck": "node scripts/healthcheck.js"
+  },
+  "keywords": [
+    "ai",
+    "assistant",
+    "automation",
+    "content",
+    "marketing",
+    "video",
+    "seo",
+    "chatbot",
+    "openclaw"
+  ],
+  "author": "Deya Team",
+  "license": "MIT",
+  "dependencies": {
+    "openclaw": "^2.0.0",
+    "axios": "^1.6.0",
+    "express": "^4.18.0",
+    "dotenv": "^16.3.0",
+    "winston": "^3.11.0",
+    "node-cron": "^3.0.3",
+    "telegraf": "^4.15.0",
+    "vk-io": "^4.8.0",
+    "instagram-private-api": "^1.45.0",
+    "twitter-api-v2": "^1.15.0",
+    "@sendgrid/mail": "^8.1.0",
+    "googleapis": "^128.0.0",
+    "@notionhq/client": "^2.2.0",
+    "openai": "^4.20.0",
+    "@anthropic-ai/sdk": "^0.24.0",
+    "@google/generative-ai": "^0.2.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "sharp": "^0.33.0",
+    "puppeteer": "^21.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "marked": "^11.0.0",
+    "sanitize-html": "^2.11.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^4.6.0",
+    "pg": "^8.11.0",
+    "sequelize": "^6.35.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "jest": "^29.7.0",
+    "eslint": "^8.54.0",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deya-ai/deya.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deya-ai/deya/issues"
+  },
+  "homepage": "https://deya.ai"
+}

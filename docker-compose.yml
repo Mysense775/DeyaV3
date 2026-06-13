@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  deya:
+    build: .
+    container_name: deya-v3
+    restart: unless-stopped
+    
+    environment:
+      - NODE_ENV=production
+      - TZ=Europe/Berlin
+    
+    env_file:
+      - .env
+    
+    ports:
+      - "3000:3000"
+    
+    volumes:
+      - ./memory:/app/memory
+      - ./skills:/app/skills
+      - ./workspace:/app/workspace
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+    
+    networks:
+      - deya-network
+    
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Redis for caching
+  redis:
+    image: redis:7-alpine
+    container_name: deya-redis
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+    networks:
+      - deya-network
+
+  # Optional: PostgreSQL for data storage
+  postgres:
+    image: postgres:16-alpine
+    container_name: deya-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: deya
+      POSTGRES_USER: deya
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-deya_password}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - deya-network
+
+volumes:
+  redis-data:
+  postgres-data:
+
+networks:
+  deya-network:
+    driver: bridge

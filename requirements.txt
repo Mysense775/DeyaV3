@@ -1,0 +1,42 @@
+# Python dependencies for Deya v3.0
+
+# AI / ML
+openai>=1.0.0
+anthropic>=0.24.0
+google-generativeai>=0.3.0
+
+# Video Processing
+ffmpeg-python>=0.2.0
+moviepy>=1.0.3
+opencv-python>=4.8.0
+Pillow>=10.0.0
+
+# Data Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+scrapy>=2.11.0
+
+# Database
+psycopg2-binary>=2.9.0
+SQLAlchemy>=2.0.0
+redis>=5.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+pyyaml>=6.0.0
+croniter>=2.0.0
+python-dateutil>=2.8.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# Security
+cryptography>=41.0.0
+bcrypt>=4.0.0

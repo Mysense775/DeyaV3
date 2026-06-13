@@ -1,0 +1,2 @@
+file '/root/.openclaw/workspace/demo_sunset.mp4'
+file '/root/.openclaw/workspace/sunset_final.mp4'
