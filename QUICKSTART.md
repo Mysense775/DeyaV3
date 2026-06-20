@@ -5,26 +5,26 @@
 ### 🐳 Через Docker (рекомендуется)
 
 ```bash
-curl -fsSL https://deya.ai/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Mysense775/DeyaV3/main/install.sh | bash
 ```
 
 Или вручную:
 
 ```bash
-git clone https://github.com/deya-ai/deya.git && cd deya
+git clone https://github.com/Mysense775/DeyaV3.git && cd deya
 docker-compose up -d
 ```
 
 ### 🖥️ Нативная установка
 
 ```bash
-curl -fsSL https://deya.ai/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/Mysense775/DeyaV3/main/install.sh | bash
 ```
 
 Или:
 
 ```bash
-git clone https://github.com/deya-ai/deya.git && cd deya
+git clone https://github.com/Mysense775/DeyaV3.git && cd deya
 npm install && pip3 install -r requirements.txt
 npm start
 ```
@@ -122,7 +122,7 @@ cd ~/.deya && git pull && npm install && pm2 restart deya
 
 - 📖 Документация: https://docs.deya.ai
 - 💬 Telegram: https://t.me/deya_ai
-- 🐛 Issues: https://github.com/deya-ai/deya/issues
+- 🐛 Issues: https://github.com/Mysense775/DeyaV3/issues
 
 ---
 

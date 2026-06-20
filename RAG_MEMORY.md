@@ -258,7 +258,7 @@ MEMORY/
 ### Быстрый Старт
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/deya-ai/deya.git
+git clone https://github.com/Mysense775/DeyaV3.git
 cd deya
 
 # Установить зависимости

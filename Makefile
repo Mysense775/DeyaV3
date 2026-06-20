@@ -9,7 +9,7 @@ help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
 install: ## One-line install
-	curl -fsSL https://deya.ai/install.sh | bash
+	curl -fsSL https://raw.githubusercontent.com/Mysense775/DeyaV3/main/install.sh | bash
 
 setup: ## Run setup script
 	node scripts/setup.js

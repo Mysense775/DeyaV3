@@ -14,7 +14,7 @@
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone https://github.com/deya-ai/deya.git
+git clone https://github.com/Mysense775/DeyaV3.git
 cd deya
 ```
 
@@ -68,7 +68,7 @@ Deya будет доступна на `http://localhost:3000`
 
 ```bash
 # Клонировать
-git clone https://github.com/deya-ai/deya.git
+git clone https://github.com/Mysense775/DeyaV3.git
 cd deya
 
 # Создать .env
@@ -109,7 +109,7 @@ sudo apt install -y nodejs
 sudo apt install -y python3 python3-pip ffmpeg git
 
 # Клонировать и запустить
-git clone https://github.com/deya-ai/deya.git
+git clone https://github.com/Mysense775/DeyaV3.git
 cd deya
 npm install
 pip3 install -r requirements.txt
